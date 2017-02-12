@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+	<meta http-equiv = "content-type" content ="text/html, charset = utf-8"/>
+	
+	<link rel="stylesheet" type="text/css" href="style/zapcss.css">
+	
+	<title>Update Requesst - Specialist</title>
+	
+</head>
+
+<body>
+
+<header>
+	<img src="images/Logo.png" width="180px" height="120px" float="center"> 	
+	<p id="para1">Zap Systems</p>
+</header>
+<br><br>
+
+<nav>
+	<a name="link" href="customerpage.html" title="Add Customers">Add Customers</a>
+	<a name="link" href="customerrequestpage.html" title="Add Customer Requests">Add Customer Requests</a>
+	<a name="link" href="specialistpage.html" title="Specialists">Specialists</a>
+	<a name="link" href="callbackoperatorpage.html" title="Callback Operator">Callback Operator</a>
+	<a name="link" href="productsreferencelibrary.html" title="Products Reference Library">Products Reference Library</a>
+	
+</nav>
+<br><br>
+
+<form>
+	<fieldset>
+		<legend>Update Request - Specialist</legend>
+			<label for="Customer Request No.">Customer Request No.:<input type="text" name="Customer Request No.">
+			<br><br>
+			<button onclick="customer_request()" style="float:right; width:80px; clear:both">Search</button>
+			<br><br>
+			<label for="Request details">Request Details:<textarea> </textarea>
+			<br>
+			<label for="Specialist Name.">Specialist Name:<input list="specialist" name="Specialist Name.">
+				<datalist id="specialist">
+					<option value="John Brown">
+					<option value="James Black">
+					<option value="Jim Green">
+				</datalist>
+			<br>
+			<label for="Date">Request Pickup Date:<input type="datetime" name="Date" placeholder="dd/mm/yyyy" required>
+			<br>
+			<label for="Time">Request Pickup Time:<input type="datetime" name="Time" placeholder="--:--" required>
+			<br>
+			<label for="Outcome Action">Outcome Action:<textarea placeholder="Outcome Action Details....." required> </textarea>
+			<br>
+			<label for="OutcomeDate">Request Outcome Date:<input type="date" name="OutcomeDate" placeholder="dd/mm/yyyy" required>
+			<br>
+			<label for="OutcomeTime">Request Outcome Time:<input type="time" name="OutcomeTime" placeholder="--:--" required>
+			<br>
+			<br>
+		<input type="reset" value="Clear" style="width:80px">
+		<input type="submit" value="Update" style="width:80px">
+	</fieldset>
+</form>
+<br><br>
+
+<footer style="float:bottom">
+
+	<address>Zap Systems, 1 One Street, Galway, Ireland.</address>
+	<p>© Copyright 2015</p>
+	<a style="background-color:white; font-weight:bold; color:black" name="link" href="homepage.html" title="Homepage">Homepage</a>
+	<br><br>
+
+</footer>
+
+</body>
+
+</html>

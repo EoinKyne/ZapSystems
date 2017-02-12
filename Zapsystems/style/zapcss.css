@@ -1,0 +1,24 @@
+Body {
+background-color:#36454f ; margin:25px 100px 0px 100px;}
+
+
+/*from w3Schools.com>*/
+a {display: inline; width: 120px; font-weight: bold; color: white; background-color: orange; text-align: center;
+    padding: 4px; border-style:solid; border-color:white;}
+
+	nav {text-align:center; font-size:21px}
+	
+
+form {background-color:white; color:black; border-style:solid; border-color:orange; width:650px; }
+
+legend{font-family:arial; font-size:22px}
+
+label {width:500px; float:left; font-family:arial; font-size:16px; clear:left; margin-top:10px}
+
+input, textarea {float:right; clear:left; width:200px; font-family:arial}
+
+header {background-color:white}
+
+footer {background-color:white; display:block;}
+
+#para1 {font-size:40px; float:left;}

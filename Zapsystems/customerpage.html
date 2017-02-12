@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+<title>Add Customers</title>
+	<meta http-equiv = "content-type" content ="text/html, charset = utf-8"/>
+	<link rel="stylesheet" type="text/css" href="style/zapcss.css">
+	
+<script type="text/javascript">
+
+function validateForm() {    
+var x = document.forms["addCustomer"]["Telephone_No"].value; //From W3Schools and Stackoverflow.com.
+   if(!x.match(/^[\d\.\" "\-]+$/))    {  
+   alert("Input your phone number");  
+   return false;  
+   }
+}
+
+</script>
+</head>
+
+<body>
+
+<header>
+	
+	<img src="images/Logo.png" width="180px" height="120px" float="center"> 	
+	<p id="para1">Zap Systems</p>
+</header>
+<br><br>
+
+<nav>
+	<a name="link" href="customerpage.html" title="Add Customers">Add Customer</a>
+	<a name="link" href="customerrequestpage.html" title="Add Customer Requests">Add Customer Requests</a>
+	<a name="link" href="specialistpage.html" title="Specialists">Specialists</a>
+	<a name="link" href="callbackoperatorpage.html" title="Callback Operator">Callback Operator</a>
+	<a name="link" href="productsreferencelibrary.html" title="Products Reference Library">Products Reference Library</a>
+</nav>
+<br><br>
+
+<form name="addCustomer" action="insertCustomers.php"
+	onsubmit="return validateForm()" method="Post" href="insertCustomers.php">
+	<fieldset>
+		<legend>Add Customer Details</legend>
+			<label for="Date">Registration Date<input type="Date" name="Registration_Date" placeholder="dd/mm/yyyy" required>
+			<br>
+			<label for="Customer Name">Customer Name:<input type="text" name="Customer_Name" placeholder="Company Name" required>
+			<br>
+			<label for="CustomerAddress1">Customer Address:<input type="text" name="Customer_Address1" placeholder="Street, Town" required>
+			<br>
+			<label for="CustomerAddress2">Customer Address:<input type="text" name="Customer_Address2" placeholder="County" required>
+			<br>
+			<label for="CustomerAddress3">Customer Address:<input type="text" name="Customer_Address3" placeholder="Country" required>
+			<br>
+			<label for="PostCode">Post Code:<input type="text" name="PostCode" placeholder="AB01 ABC1" required>
+			<br>
+			<label for="Contact">Contact:<input type="text" name="Contact" placeholder="Full Name" required>
+			<br>
+			<label for="email">Email:<input type="email" name="Email" placeholder="Adam@systems.ie" required>
+			<br>
+			<label for="Telephone_No">Phone:<input type="tel" name="Telephone_No" placeholder="091 123456" required>
+			<br>
+			<br>
+			<label for="product">Product:<input list="Product" name="Product" required>
+				<datalist id="Product"> <!-- from w3Schools-->
+				<option value="Desk Top Publishing">
+				<option value="Database">
+				<option value="Spreadsheet">
+				</datalist>				
+			<br>
+			<label for="Sales Rep">Sales Rep.:<input list="Sales_Rep" name="Sales_Rep"required>
+				<datalist id="Sales_Rep">
+				<option value="Tom Thumb">
+				<option value="Donald Kimball">
+				<option value="John Williamson">
+				</datalist>
+			<br><br>
+		<input type="reset" value="Clear" style="width:80px">	
+		<input type="submit" value="Submit" style="width:80px">
+	</fieldset>
+</form>
+<br><br><br>
+
+<footer style="float:bottom">
+
+	<address>Zap Systems, 1 One Street, Galway, Ireland.</address>
+	<p>© Copyright 2015</p>
+	<a style="background-color:white; font-weight:bold; color:black" name="link" href="homepage.html" title="Homepage">Homepage</a>
+	<br><br>
+
+</footer>
+  
+</body>
+
+</html>
